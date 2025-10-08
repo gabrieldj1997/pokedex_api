@@ -1,0 +1,27 @@
+{
+    "id": 108,
+    "name": "lickitung",
+    "height": 12,
+    "weight": 655,
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "normal",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/1\/"
+            }
+        }
+    ],
+    "ps": 90,
+    "attack": 55,
+    "defense": 75,
+    "attack_special": 60,
+    "defense_special": 75,
+    "speed": 30,
+    "category": "Licking Pok\u00e9mon",
+    "evolution_stage": 1,
+    "evolve_from": [],
+    "evolve_to": [
+        "lickilicky"
+    ]
+}

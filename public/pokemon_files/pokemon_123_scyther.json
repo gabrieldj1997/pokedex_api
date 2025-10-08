@@ -1,0 +1,35 @@
+{
+    "id": 123,
+    "name": "scyther",
+    "height": 15,
+    "weight": 560,
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "bug",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/7\/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "flying",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/3\/"
+            }
+        }
+    ],
+    "ps": 70,
+    "attack": 110,
+    "defense": 80,
+    "attack_special": 55,
+    "defense_special": 80,
+    "speed": 105,
+    "category": "Mantis Pok\u00e9mon",
+    "evolution_stage": 1,
+    "evolve_from": [],
+    "evolve_to": [
+        "scizor",
+        "kleavor"
+    ]
+}

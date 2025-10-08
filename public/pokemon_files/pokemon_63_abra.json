@@ -1,0 +1,27 @@
+{
+    "id": 63,
+    "name": "abra",
+    "height": 9,
+    "weight": 195,
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "psychic",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/14\/"
+            }
+        }
+    ],
+    "ps": 25,
+    "attack": 20,
+    "defense": 15,
+    "attack_special": 105,
+    "defense_special": 55,
+    "speed": 90,
+    "category": "Psi Pok\u00e9mon",
+    "evolution_stage": 1,
+    "evolve_from": [],
+    "evolve_to": [
+        "kadabra"
+    ]
+}

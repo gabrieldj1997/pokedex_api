@@ -1,0 +1,1 @@
+<img src="{{ url('pokemon_files/pokeball_logo.png') }}" alt="" {{ $attributes }}>

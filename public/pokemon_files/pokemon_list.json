@@ -1,0 +1,757 @@
+[
+    {
+        "name": "bulbasaur",
+        "id": 1,
+        "discovered": false
+    },
+    {
+        "name": "ivysaur",
+        "id": 2,
+        "discovered": false
+    },
+    {
+        "name": "venusaur",
+        "id": 3,
+        "discovered": false
+    },
+    {
+        "name": "charmander",
+        "id": 4,
+        "discovered": false
+    },
+    {
+        "name": "charmeleon",
+        "id": 5,
+        "discovered": false
+    },
+    {
+        "name": "charizard",
+        "id": 6,
+        "discovered": false
+    },
+    {
+        "name": "squirtle",
+        "id": 7,
+        "discovered": false
+    },
+    {
+        "name": "wartortle",
+        "id": 8,
+        "discovered": false
+    },
+    {
+        "name": "blastoise",
+        "id": 9,
+        "discovered": false
+    },
+    {
+        "name": "caterpie",
+        "id": 10,
+        "discovered": false
+    },
+    {
+        "name": "metapod",
+        "id": 11,
+        "discovered": false
+    },
+    {
+        "name": "butterfree",
+        "id": 12,
+        "discovered": false
+    },
+    {
+        "name": "weedle",
+        "id": 13,
+        "discovered": false
+    },
+    {
+        "name": "kakuna",
+        "id": 14,
+        "discovered": false
+    },
+    {
+        "name": "beedrill",
+        "id": 15,
+        "discovered": false
+    },
+    {
+        "name": "pidgey",
+        "id": 16,
+        "discovered": false
+    },
+    {
+        "name": "pidgeotto",
+        "id": 17,
+        "discovered": false
+    },
+    {
+        "name": "pidgeot",
+        "id": 18,
+        "discovered": false
+    },
+    {
+        "name": "rattata",
+        "id": 19,
+        "discovered": false
+    },
+    {
+        "name": "raticate",
+        "id": 20,
+        "discovered": false
+    },
+    {
+        "name": "spearow",
+        "id": 21,
+        "discovered": true
+    },
+    {
+        "name": "fearow",
+        "id": 22,
+        "discovered": false
+    },
+    {
+        "name": "ekans",
+        "id": 23,
+        "discovered": false
+    },
+    {
+        "name": "arbok",
+        "id": 24,
+        "discovered": false
+    },
+    {
+        "name": "pikachu",
+        "id": 25,
+        "discovered": false
+    },
+    {
+        "name": "raichu",
+        "id": 26,
+        "discovered": false
+    },
+    {
+        "name": "sandshrew",
+        "id": 27,
+        "discovered": false
+    },
+    {
+        "name": "sandslash",
+        "id": 28,
+        "discovered": false
+    },
+    {
+        "name": "nidoran-f",
+        "id": 29,
+        "discovered": false
+    },
+    {
+        "name": "nidorina",
+        "id": 30,
+        "discovered": false
+    },
+    {
+        "name": "nidoqueen",
+        "id": 31,
+        "discovered": false
+    },
+    {
+        "name": "nidoran-m",
+        "id": 32,
+        "discovered": false
+    },
+    {
+        "name": "nidorino",
+        "id": 33,
+        "discovered": false
+    },
+    {
+        "name": "nidoking",
+        "id": 34,
+        "discovered": false
+    },
+    {
+        "name": "clefairy",
+        "id": 35,
+        "discovered": false
+    },
+    {
+        "name": "clefable",
+        "id": 36,
+        "discovered": false
+    },
+    {
+        "name": "vulpix",
+        "id": 37,
+        "discovered": false
+    },
+    {
+        "name": "ninetales",
+        "id": 38,
+        "discovered": false
+    },
+    {
+        "name": "jigglypuff",
+        "id": 39,
+        "discovered": false
+    },
+    {
+        "name": "wigglytuff",
+        "id": 40,
+        "discovered": false
+    },
+    {
+        "name": "zubat",
+        "id": 41,
+        "discovered": false
+    },
+    {
+        "name": "golbat",
+        "id": 42,
+        "discovered": false
+    },
+    {
+        "name": "oddish",
+        "id": 43,
+        "discovered": false
+    },
+    {
+        "name": "gloom",
+        "id": 44,
+        "discovered": false
+    },
+    {
+        "name": "vileplume",
+        "id": 45,
+        "discovered": false
+    },
+    {
+        "name": "paras",
+        "id": 46,
+        "discovered": false
+    },
+    {
+        "name": "parasect",
+        "id": 47,
+        "discovered": false
+    },
+    {
+        "name": "venonat",
+        "id": 48,
+        "discovered": false
+    },
+    {
+        "name": "venomoth",
+        "id": 49,
+        "discovered": false
+    },
+    {
+        "name": "diglett",
+        "id": 50,
+        "discovered": false
+    },
+    {
+        "name": "dugtrio",
+        "id": 51,
+        "discovered": false
+    },
+    {
+        "name": "meowth",
+        "id": 52,
+        "discovered": false
+    },
+    {
+        "name": "persian",
+        "id": 53,
+        "discovered": false
+    },
+    {
+        "name": "psyduck",
+        "id": 54,
+        "discovered": false
+    },
+    {
+        "name": "golduck",
+        "id": 55,
+        "discovered": false
+    },
+    {
+        "name": "mankey",
+        "id": 56,
+        "discovered": false
+    },
+    {
+        "name": "primeape",
+        "id": 57,
+        "discovered": true
+    },
+    {
+        "name": "growlithe",
+        "id": 58,
+        "discovered": false
+    },
+    {
+        "name": "arcanine",
+        "id": 59,
+        "discovered": false
+    },
+    {
+        "name": "poliwag",
+        "id": 60,
+        "discovered": false
+    },
+    {
+        "name": "poliwhirl",
+        "id": 61,
+        "discovered": false
+    },
+    {
+        "name": "poliwrath",
+        "id": 62,
+        "discovered": false
+    },
+    {
+        "name": "abra",
+        "id": 63,
+        "discovered": true
+    },
+    {
+        "name": "kadabra",
+        "id": 64,
+        "discovered": false
+    },
+    {
+        "name": "alakazam",
+        "id": 65,
+        "discovered": false
+    },
+    {
+        "name": "machop",
+        "id": 66,
+        "discovered": false
+    },
+    {
+        "name": "machoke",
+        "id": 67,
+        "discovered": false
+    },
+    {
+        "name": "machamp",
+        "id": 68,
+        "discovered": true
+    },
+    {
+        "name": "bellsprout",
+        "id": 69,
+        "discovered": false
+    },
+    {
+        "name": "weepinbell",
+        "id": 70,
+        "discovered": false
+    },
+    {
+        "name": "victreebel",
+        "id": 71,
+        "discovered": false
+    },
+    {
+        "name": "tentacool",
+        "id": 72,
+        "discovered": false
+    },
+    {
+        "name": "tentacruel",
+        "id": 73,
+        "discovered": false
+    },
+    {
+        "name": "geodude",
+        "id": 74,
+        "discovered": false
+    },
+    {
+        "name": "graveler",
+        "id": 75,
+        "discovered": false
+    },
+    {
+        "name": "golem",
+        "id": 76,
+        "discovered": false
+    },
+    {
+        "name": "ponyta",
+        "id": 77,
+        "discovered": true
+    },
+    {
+        "name": "rapidash",
+        "id": 78,
+        "discovered": true
+    },
+    {
+        "name": "slowpoke",
+        "id": 79,
+        "discovered": false
+    },
+    {
+        "name": "slowbro",
+        "id": 80,
+        "discovered": false
+    },
+    {
+        "name": "magnemite",
+        "id": 81,
+        "discovered": false
+    },
+    {
+        "name": "magneton",
+        "id": 82,
+        "discovered": false
+    },
+    {
+        "name": "farfetchd",
+        "id": 83,
+        "discovered": false
+    },
+    {
+        "name": "doduo",
+        "id": 84,
+        "discovered": false
+    },
+    {
+        "name": "dodrio",
+        "id": 85,
+        "discovered": false
+    },
+    {
+        "name": "seel",
+        "id": 86,
+        "discovered": false
+    },
+    {
+        "name": "dewgong",
+        "id": 87,
+        "discovered": false
+    },
+    {
+        "name": "grimer",
+        "id": 88,
+        "discovered": false
+    },
+    {
+        "name": "muk",
+        "id": 89,
+        "discovered": true
+    },
+    {
+        "name": "shellder",
+        "id": 90,
+        "discovered": false
+    },
+    {
+        "name": "cloyster",
+        "id": 91,
+        "discovered": true
+    },
+    {
+        "name": "gastly",
+        "id": 92,
+        "discovered": false
+    },
+    {
+        "name": "haunter",
+        "id": 93,
+        "discovered": false
+    },
+    {
+        "name": "gengar",
+        "id": 94,
+        "discovered": false
+    },
+    {
+        "name": "onix",
+        "id": 95,
+        "discovered": false
+    },
+    {
+        "name": "drowzee",
+        "id": 96,
+        "discovered": false
+    },
+    {
+        "name": "hypno",
+        "id": 97,
+        "discovered": false
+    },
+    {
+        "name": "krabby",
+        "id": 98,
+        "discovered": false
+    },
+    {
+        "name": "kingler",
+        "id": 99,
+        "discovered": false
+    },
+    {
+        "name": "voltorb",
+        "id": 100,
+        "discovered": false
+    },
+    {
+        "name": "electrode",
+        "id": 101,
+        "discovered": false
+    },
+    {
+        "name": "exeggcute",
+        "id": 102,
+        "discovered": false
+    },
+    {
+        "name": "exeggutor",
+        "id": 103,
+        "discovered": false
+    },
+    {
+        "name": "cubone",
+        "id": 104,
+        "discovered": false
+    },
+    {
+        "name": "marowak",
+        "id": 105,
+        "discovered": false
+    },
+    {
+        "name": "hitmonlee",
+        "id": 106,
+        "discovered": false
+    },
+    {
+        "name": "hitmonchan",
+        "id": 107,
+        "discovered": false
+    },
+    {
+        "name": "lickitung",
+        "id": 108,
+        "discovered": true
+    },
+    {
+        "name": "koffing",
+        "id": 109,
+        "discovered": true
+    },
+    {
+        "name": "weezing",
+        "id": 110,
+        "discovered": false
+    },
+    {
+        "name": "rhyhorn",
+        "id": 111,
+        "discovered": false
+    },
+    {
+        "name": "rhydon",
+        "id": 112,
+        "discovered": true
+    },
+    {
+        "name": "chansey",
+        "id": 113,
+        "discovered": false
+    },
+    {
+        "name": "tangela",
+        "id": 114,
+        "discovered": false
+    },
+    {
+        "name": "kangaskhan",
+        "id": 115,
+        "discovered": false
+    },
+    {
+        "name": "horsea",
+        "id": 116,
+        "discovered": false
+    },
+    {
+        "name": "seadra",
+        "id": 117,
+        "discovered": false
+    },
+    {
+        "name": "goldeen",
+        "id": 118,
+        "discovered": false
+    },
+    {
+        "name": "seaking",
+        "id": 119,
+        "discovered": false
+    },
+    {
+        "name": "staryu",
+        "id": 120,
+        "discovered": false
+    },
+    {
+        "name": "starmie",
+        "id": 121,
+        "discovered": true
+    },
+    {
+        "name": "mr-mime",
+        "id": 122,
+        "discovered": false
+    },
+    {
+        "name": "scyther",
+        "id": 123,
+        "discovered": false
+    },
+    {
+        "name": "jynx",
+        "id": 124,
+        "discovered": false
+    },
+    {
+        "name": "electabuzz",
+        "id": 125,
+        "discovered": false
+    },
+    {
+        "name": "magmar",
+        "id": 126,
+        "discovered": false
+    },
+    {
+        "name": "pinsir",
+        "id": 127,
+        "discovered": false
+    },
+    {
+        "name": "tauros",
+        "id": 128,
+        "discovered": false
+    },
+    {
+        "name": "magikarp",
+        "id": 129,
+        "discovered": false
+    },
+    {
+        "name": "gyarados",
+        "id": 130,
+        "discovered": false
+    },
+    {
+        "name": "lapras",
+        "id": 131,
+        "discovered": false
+    },
+    {
+        "name": "ditto",
+        "id": 132,
+        "discovered": false
+    },
+    {
+        "name": "eevee",
+        "id": 133,
+        "discovered": false
+    },
+    {
+        "name": "vaporeon",
+        "id": 134,
+        "discovered": false
+    },
+    {
+        "name": "jolteon",
+        "id": 135,
+        "discovered": false
+    },
+    {
+        "name": "flareon",
+        "id": 136,
+        "discovered": false
+    },
+    {
+        "name": "porygon",
+        "id": 137,
+        "discovered": false
+    },
+    {
+        "name": "omanyte",
+        "id": 138,
+        "discovered": false
+    },
+    {
+        "name": "omastar",
+        "id": 139,
+        "discovered": false
+    },
+    {
+        "name": "kabuto",
+        "id": 140,
+        "discovered": false
+    },
+    {
+        "name": "kabutops",
+        "id": 141,
+        "discovered": false
+    },
+    {
+        "name": "aerodactyl",
+        "id": 142,
+        "discovered": true
+    },
+    {
+        "name": "snorlax",
+        "id": 143,
+        "discovered": false
+    },
+    {
+        "name": "articuno",
+        "id": 144,
+        "discovered": false
+    },
+    {
+        "name": "zapdos",
+        "id": 145,
+        "discovered": false
+    },
+    {
+        "name": "moltres",
+        "id": 146,
+        "discovered": false
+    },
+    {
+        "name": "dratini",
+        "id": 147,
+        "discovered": false
+    },
+    {
+        "name": "dragonair",
+        "id": 148,
+        "discovered": false
+    },
+    {
+        "name": "dragonite",
+        "id": 149,
+        "discovered": false
+    },
+    {
+        "name": "mewtwo",
+        "id": 150,
+        "discovered": false
+    },
+    {
+        "name": "mew",
+        "id": 151,
+        "discovered": true
+    }
+]

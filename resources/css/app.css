@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'pokemon-light';
+    src: url('/fonts/Pokemon_Hollow.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'pokemon-dark';
+    src: url('/fonts/Pokemon_Solid.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'flexo-demi';
+    src: url('/fonts/Flexo-Demi.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

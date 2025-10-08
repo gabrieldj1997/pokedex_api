@@ -1,0 +1,34 @@
+{
+    "id": 91,
+    "name": "cloyster",
+    "height": 15,
+    "weight": 1325,
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "water",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/11\/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "ice",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/15\/"
+            }
+        }
+    ],
+    "ps": 50,
+    "attack": 95,
+    "defense": 180,
+    "attack_special": 85,
+    "defense_special": 45,
+    "speed": 70,
+    "category": "Bivalve Pok\u00e9mon",
+    "evolution_stage": 2,
+    "evolve_from": [
+        "shellder"
+    ],
+    "evolve_to": []
+}

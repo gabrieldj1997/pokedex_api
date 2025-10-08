@@ -1,0 +1,27 @@
+{
+    "id": 68,
+    "name": "machamp",
+    "height": 16,
+    "weight": 1300,
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "fighting",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/2\/"
+            }
+        }
+    ],
+    "ps": 90,
+    "attack": 130,
+    "defense": 80,
+    "attack_special": 65,
+    "defense_special": 85,
+    "speed": 55,
+    "category": "Superpower Pok\u00e9mon",
+    "evolution_stage": 3,
+    "evolve_from": [
+        "machoke"
+    ],
+    "evolve_to": []
+}

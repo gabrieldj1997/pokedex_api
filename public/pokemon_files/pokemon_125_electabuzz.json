@@ -1,0 +1,29 @@
+{
+    "id": 125,
+    "name": "electabuzz",
+    "height": 11,
+    "weight": 300,
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "electric",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/13\/"
+            }
+        }
+    ],
+    "ps": 65,
+    "attack": 83,
+    "defense": 57,
+    "attack_special": 95,
+    "defense_special": 85,
+    "speed": 105,
+    "category": "Electric Pok\u00e9mon",
+    "evolution_stage": 2,
+    "evolve_from": [
+        "elekid"
+    ],
+    "evolve_to": [
+        "electivire"
+    ]
+}

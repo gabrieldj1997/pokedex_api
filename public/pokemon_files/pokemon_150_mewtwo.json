@@ -1,0 +1,25 @@
+{
+    "id": 150,
+    "name": "mewtwo",
+    "height": 20,
+    "weight": 1220,
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "psychic",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/14\/"
+            }
+        }
+    ],
+    "ps": 106,
+    "attack": 110,
+    "defense": 90,
+    "attack_special": 154,
+    "defense_special": 90,
+    "speed": 130,
+    "category": "Genetic Pok\u00e9mon",
+    "evolution_stage": 1,
+    "evolve_from": [],
+    "evolve_to": []
+}

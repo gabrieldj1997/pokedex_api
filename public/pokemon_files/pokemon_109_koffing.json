@@ -1,0 +1,27 @@
+{
+    "id": 109,
+    "name": "koffing",
+    "height": 6,
+    "weight": 10,
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "poison",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/4\/"
+            }
+        }
+    ],
+    "ps": 40,
+    "attack": 65,
+    "defense": 95,
+    "attack_special": 60,
+    "defense_special": 45,
+    "speed": 35,
+    "category": "Poison Gas Pok\u00e9mon",
+    "evolution_stage": 1,
+    "evolve_from": [],
+    "evolve_to": [
+        "weezing"
+    ]
+}

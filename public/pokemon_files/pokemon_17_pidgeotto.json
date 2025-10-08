@@ -1,0 +1,36 @@
+{
+    "id": 17,
+    "name": "pidgeotto",
+    "height": 11,
+    "weight": 300,
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "normal",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/1\/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "flying",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/3\/"
+            }
+        }
+    ],
+    "ps": 63,
+    "attack": 60,
+    "defense": 55,
+    "attack_special": 50,
+    "defense_special": 50,
+    "speed": 71,
+    "category": "Bird Pok\u00e9mon",
+    "evolution_stage": 2,
+    "evolve_from": [
+        "pidgey"
+    ],
+    "evolve_to": [
+        "pidgeot"
+    ]
+}

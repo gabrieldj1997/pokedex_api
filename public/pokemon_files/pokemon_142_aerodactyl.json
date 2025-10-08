@@ -1,0 +1,32 @@
+{
+    "id": 142,
+    "name": "aerodactyl",
+    "height": 18,
+    "weight": 590,
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "rock",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/6\/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "flying",
+                "url": "https:\/\/pokeapi.co\/api\/v2\/type\/3\/"
+            }
+        }
+    ],
+    "ps": 80,
+    "attack": 105,
+    "defense": 65,
+    "attack_special": 60,
+    "defense_special": 75,
+    "speed": 130,
+    "category": "Fossil Pok\u00e9mon",
+    "evolution_stage": 1,
+    "evolve_from": [],
+    "evolve_to": []
+}
