@@ -93,11 +93,18 @@ Por padrão, a aplicação está configurada para exibir as sprites no estilo Ho
 
 Altere as seguintes variáveis no seu arquivo .env:
 
-Variável	Padrão	Descrição
-POKEMON_SPRITE_URL	https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/	A URL de onde o arquivo será buscado.
-POKEMON_SPRITE_TYPE	.png	O tipo de arquivo (extensão) que será anexado ao ID do Pokémon.
+Variável	
+Padrão	
+Descrição
 
-Exportar para as Planilhas
+POKEMON_SPRITE_URL	
+https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/	
+A URL de onde o arquivo será buscado.
+
+POKEMON_SPRITE_TYPE
+.png	
+O tipo de arquivo (extensão) que será anexado ao ID do Pokémon.
+
 Exemplos de Sprites que você pode usar:
 
 Estilo de Imagem	POKEMON_SPRITE_URL	POKEMON_SPRITE_TYPE
@@ -113,7 +120,6 @@ Rota (Acessar no navegador ou via API)	Função
 /reset/list	Reseta a Lista de Descoberta. Apaga todos os Pokémon que você descobriu, permitindo que você jogue o desafio "Qual é esse Pokémon?" novamente do zero.
 /reset/img	Apaga o Cache de Imagens. Útil se você mudar a variável POKEMON_SPRITE_URL no .env e quiser que o sistema baixe o novo conjunto de sprites.
 
-Exportar para as Planilhas
 🤝 Contribuições
 Contribuições são muito bem-vindas! Sinta-se à vontade para adicionar novas funcionalidades, refatorar código ou corrigir bugs.
 
@@ -132,7 +138,7 @@ Assim que possível, revisarei e farei o merge das suas contribuições!
 🔗 Informações Adicionais
 API Consumida: PokeAPI
 
-Desenvolvedor: Gabriel Costa (LinkedIn)
+Desenvolvedor: Gabriel Costa [LinkedIn](https://www.linkedin.com/in/gabriel-costa-578a9719b/)
 
 📄 Licença
 Este projeto está licenciado sob a Licença Pública Geral GNU (GPL).
