@@ -18,7 +18,7 @@
 <div class="card w-100" {{ $discovered == 1 ? "onclick=getPokemonDetails('".route('getPokemonByIdOrName', $pokeId)."')" : 'onclick=undiscoveredPokemon()' }}>
   <div class="d-flex justify-content-center">
     <img
-      src="{{ url(path: "/pokemon_files/sprites/{$pokeId}.png") }}"
+      src="{{ url(path: "/pokemon_files/sprites/{$pokeId}".env('POKEMON_SPRITE_TYPE')) }}"
       class="img-fluid rounded"
       @style([ 'width: 200px' , 'height: 200px' , 'filter:grayscale(100%) brightness(0%)'=> $discovered == 0,
     ])

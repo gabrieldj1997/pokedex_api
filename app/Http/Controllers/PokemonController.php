@@ -10,8 +10,8 @@ use App\Models\Pokemon;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Illuminate\Pagination\LengthAwarePaginator;
-
-use function Laravel\Prompts\error;
+use Illuminate\Http\Client\ConnectionException;
+use Exception;
 
 class PokemonController extends Controller
 {
@@ -19,12 +19,16 @@ class PokemonController extends Controller
     private $rootFiles;
     private $listPokemon;
     private $sprites;
+    private $spritesUrl;
+    private $spritesType;
     public function __construct()
     {
         $this->disk = 'public_root';
         $this->rootFiles = 'pokemon_files/';
         $this->listPokemon = $this->rootFiles . 'pokemon_list.json';
         $this->sprites = $this->rootFiles . 'sprites/';
+        $this->spritesUrl = env('POKEMON_SPRITE_URL', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/');
+        $this->spritesType = env('POKEMON_SPRITE_TYPE', '.png');
     }
     public function pokemonList(Request $request)
     {
@@ -104,26 +108,37 @@ class PokemonController extends Controller
         Storage::disk($this->disk)->put($this->rootFiles . 'pokemon_' . $pokemon->id . '_' . $pokemon->name . '.json', json_encode($pokemon, JSON_PRETTY_PRINT));
         return view('pokemon', ['pokemon' => $pokemon]);
     }
+
+
     public function getImages()
     {
+        set_time_limit(180); 
         $jsonPoke = Storage::disk($this->disk)->get($this->listPokemon);
         $jsonPoke = json_decode($jsonPoke, true);
+        if(!$jsonPoke) return "Volte para rota inicial para pegar a lista de pokemons";
         foreach ($jsonPoke as $poke) {
-            $fileName = "{$poke['id']}.png";
+            $fileName = $poke['id'] . $this->spritesType;
             $filePath = $this->sprites . $fileName;
             if (!Storage::disk($this->disk)->exists($filePath)) {
                 $remoteUrl = $this->getSpriteUrl($poke['id']);
                 try {
-                    $response = Http::get($remoteUrl);
+                    $response = Http::retry(3, 60000)->get($remoteUrl);
+
                     if ($response->successful()) {
                         $resource = $response->toPsrResponse()->getBody()->getContents();
                         Storage::disk($this->disk)->put($filePath, $resource);
+                    } else {
+                        Log::error("Falha na resposta HTTP para {$poke['id']} (Status: {$response->status()}). URL: {$remoteUrl}");
                     }
-                } catch (\Exception $e) {
-                    Log::error("Erro ao processar imagem para {$poke['id']}: " . $e->getMessage());
+                } catch (ConnectionException $e) {
+                    Log::error("Falha persistente na conexão após 3 tentativas para {$poke['id']}. URL: {$remoteUrl}. Erro: " . $e->getMessage());
+
+                } catch (Exception $e) {
+                    Log::error("Erro geral ao processar imagem para {$poke['id']}. URL: {$remoteUrl}. Erro: " . $e->getMessage());
                 }
             }
         }
+        return redirect()->route('getPokemonList');
     }
     private function existsFilePokemon($identifier)
     {
@@ -152,14 +167,13 @@ class PokemonController extends Controller
         }
         Storage::disk($this->disk)->put($this->listPokemon, json_encode($pokeJson, JSON_PRETTY_PRINT));
         if ($pokemonDiscovered) {
-            $this->notifyNewPokemon($pokemonDiscovered);
             return redirect()->route('getPokemonByIdOrName', $pokemonDiscovered->id);
         }
         return redirect()->route('getPokemonList');
     }
     private function getSpriteUrl($id)
     {
-        return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/{$id}.png";
+        return $this->spritesUrl . $id . $this->spritesType;
     }
     private function getStatsByName($listStats, $name)
     {
@@ -260,43 +274,5 @@ class PokemonController extends Controller
     {
         Storage::disk($this->disk)->deleteDirectory($this->sprites);
         return redirect()->route('getPokemonList');
-    }
-    private function notifyNewPokemon($pokemon)
-    {
-        $whatsappApiUrl = "http://localhost:3000/client/sendMessage/gbltech";
-        $targetChatId = '556185863577@c.us';
-        $pokeName = $pokemon->name;
-
-        $payload = [
-            'chatId' => $targetChatId,
-            'contentType' => 'string',
-            'content' => "Parabéns, Treinador! Você descobriu o {$pokeName}!",
-        ];
-
-        try {
-            $response = Http::withHeaders([
-                'Accept' => '*/*',
-                'x-api-key' => 'gabriel1997',
-                'Content-Type' => 'application/json'
-            ])->post($whatsappApiUrl, $payload);
-
-            if ($response->successful()) {
-                Log::info(json_encode([
-                    'message' => 'Notificação do WhatsApp enviada com sucesso!',
-                    'api_response' => $response->json()
-                ]));
-            } else {
-                Log::info(json_encode([
-                    'message' => 'Erro ao enviar notificação para a API do WhatsApp.',
-                    'status' => $response->status(),
-                    'error_details' => $response->json()
-                ]));
-            }
-        } catch (\Exception $e) {
-            Log::error(json_encode([
-                'message' => 'Falha na conexão com a API do WhatsApp.',
-                'error' => $e->getMessage()
-            ]));
-        }
     }
 }
